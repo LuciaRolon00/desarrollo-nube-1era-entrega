@@ -1,0 +1,87 @@
+// Lista de videojuegos con descripción e imagen
+export const videojuegos = [
+  {
+    id: 1,
+    titulo: "Elden Ring",
+    imagen: "/img/elden ring.jpg",
+    descripcion: "Elden Ring ofrece un enorme mundo abierto lleno de secretos y desafíos, combinando la jugabilidad clásica de los Souls con libertad de exploración. Sus combates son exigentes, la dirección artística es sobresaliente y la historia, aunque críptica, enriquece una experiencia épica y absorbente.",
+    estrellas: 5,
+  },
+  {
+    id: 2,
+    titulo: "Omori",
+    imagen: "/img/omori.jpg",
+    descripcion: "Omori es un RPG con estética única y toques de terror psicológico, que explora temas como la ansiedad y la depresión a través de una historia emotiva y profunda. Combina combate por turnos con mecánicas basadas en emociones, y alterna entre un mundo real y uno onírico, creando una experiencia tan bella como inquietante.",
+    estrellas: 4,
+  },
+  {
+    id: 3,
+    titulo: "Silent Hill 2 (remake)",
+    imagen: "/img/silent hill 2.jpg",
+    descripcion: "Silent Hill 2 Remake moderniza el clásico de terror psicológico con gráficos impresionantes y mejoras jugables, manteniendo la atmósfera opresiva y la narrativa profunda del original. Su enfoque en el trauma y la culpa, junto con un diseño inquietante, lo convierten en una experiencia intensa y fiel para veteranos y nuevos jugadores.",
+    estrellas: 5,
+  },
+  {
+    id: 4,
+    titulo: "Blasphemous",
+    imagen: "/img/blasphemous.jpg",
+    descripcion: "Blasphemous es un metroidvania oscuro y desafiante que destaca por su estética inspirada en el arte religioso y el folclore español. Combina combates exigentes, exploración profunda y un diseño artístico impactante, creando una experiencia intensa y atmosférica que atrapa a los fans del género.",
+    estrellas: 5,
+  },
+  {
+    id: 5,
+    titulo: "Hollow Knight",
+    imagen: "/img/hollow knight.jpg",
+    descripcion: "Hollow Knight es un metroidvania aclamado por su vasto mundo interconectado, exploración profunda y combates precisos. Con un estilo artístico hermoso y una ambientación melancólica, ofrece una experiencia desafiante y absorbente que recompensa la curiosidad y la perseverancia.",
+    estrellas: 5,
+  },
+  {
+    id: 6,
+    titulo: "World of Horror",
+    imagen: "/img/world of horror.jpg",
+    descripcion: "World of Horror es un RPG de terror inspirado en Junji Ito y Lovecraft, con gráficos retro en 1-bit y una atmósfera inquietante. Ofrece historias cortas y rejugables donde las decisiones y la gestión de recursos son clave para sobrevivir al horror cósmico.",
+    estrellas: 3,
+  },
+  {
+    id: 7,
+    titulo: "Alice: Madness Returns",
+    imagen: "/img/alice madness.jpg",
+    descripcion: "Alice: Madness Returns reinventa el clásico cuento con una visión oscura y retorcida. Combina plataformas, combate y exploración en un mundo macabro, destacando por su diseño artístico perturbador y su narrativa sobre la locura y el trauma.",
+    estrellas: 3,
+  },
+  {
+    id: 8,
+    titulo: "Hades",
+    imagen: "/img/hades.jpg",
+    descripcion: "Hades es un roguelike ágil y adictivo donde encarnás a Zagreus, hijo de Hades, intentando escapar del inframundo. Con combates rápidos, narrativa dinámica y un estilo visual vibrante, ofrece una experiencia profunda y rejugable que redefine el género.",
+    estrellas: 4,
+  },
+  {
+    id: 9,
+    titulo: "Danganronpa",
+    imagen: "/img/danganronpa.jpg",
+    descripcion: "Danganronpa es una novela visual de misterio y supervivencia que mezcla investigación, juicios y giros inesperados. Su historia atrapante y personajes carismáticos, junto con un tono entre el thriller y lo absurdo, la convierten en una saga única e inolvidable.",
+    estrellas: 4,
+  },
+  {
+    id: 10,
+    titulo: "Resident Evil 4",
+    imagen: "/img/resident evil 4.jpg",
+    descripcion: "Resident Evil 4 Remake revitaliza el clásico de acción y terror con gráficos espectaculares y mejoras jugables que refinan la experiencia original. Mantiene la tensión, el ritmo intenso y el carisma de Leon, ofreciendo una versión moderna y sólida del icónico survival horror.",
+    estrellas: 5,
+  },
+  {
+    id: 11,
+    titulo: "Goat Simulator",
+    imagen: "/img/goat simulator.jpg",
+    descripcion: "Goat Simulator es un sandbox absurdo y caótico donde encarnás a una cabra causando estragos. Su jugabilidad intencionalmente ridícula y llena de bugs lo convierte en una experiencia hilarante y despreocupada, ideal para quienes buscan diversión sin reglas.",
+    estrellas: 5,
+  },
+  {
+    id: 12,
+    titulo: "River City Girls",
+    imagen: "/img/river city girls.jpg",
+    descripcion: "River City Girls es un beat ‘em up vibrante y dinámico que combina combates clásicos con un toque moderno. Sus personajes carismáticos, estilo visual colorido y una banda sonora pegadiza lo convierten en un homenaje divertido y fresco al género retro.",
+    estrellas: 3,
+  }
+];

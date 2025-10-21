@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  background-image: url('/img/fondo estrellas.jpeg');
+  color: white;
+}
