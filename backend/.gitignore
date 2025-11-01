@@ -1,0 +1,33 @@
+# Entornos virtuales
+venv/
+env/
+*.env 
+
+# Bases de datos SQLite
+*.sqlite3
+db.sqlite3
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos de dependencias descargadas
+pip-wheel-metadata/
+
+# Archivos de coverage
+.coverage
+.coverage.*
+htmlcov/
