@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # Servicio de la Base de Datos (PostgreSQL)
+  db:
+    image: postgres:15-alpine 
+    container_name: postgres_db_nube
+    volumes:
+      # Named volume
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      # le pasamos las variables de .env
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "5433:5432"
+    networks:
+      - [cite_start]nube_network 
+
+  # Servicio de la API de Django
+  web:
+    container_name: django_web_nube
+    build:
+      context: ./backend # ubicación del Dockerfile
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      # Bind mount
+      - ./backend:/app
+    ports:
+      - "8000:8000" 
+    env_file:
+      - ./backend/.env
+    environment:
+      - DB_HOST=db 
+    depends_on:
+      - [cite_start]db 
+    networks:
+      - nube_network
+
+# Volúmenes y redes
+volumes:
+  postgres_data:
+
+networks:
+  nube_network:
+    driver: bridge
