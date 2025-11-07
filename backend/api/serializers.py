@@ -8,6 +8,15 @@ class JuegoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Juego
         fields = "__all__"
+        extra_kwargs = {
+            'titulo': {'required': True, 'error_messages': {"blank": "El título no puede estar vacío."}},
+            'estrellas': {'required': True, 'error_messages': {"null": "Debe indicar un puntaje de estrellas."}},
+        }
+
+    def validate_titulo(self, value):
+        if len(value) < 3:
+            raise serializers.ValidationError("El título debe tener al menos 3 caracteres.")
+        return value    
 
 class ContactoSerializer(serializers.ModelSerializer):
     class Meta:

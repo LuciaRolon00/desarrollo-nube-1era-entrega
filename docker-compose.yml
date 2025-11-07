@@ -16,7 +16,7 @@ services:
     ports:
       - "5433:5432"
     networks:
-      - [cite_start]nube_network 
+      - nube_network 
 
   # Servicio de la API de Django
   web:
@@ -35,7 +35,7 @@ services:
     environment:
       - DB_HOST=db 
     depends_on:
-      - [cite_start]db 
+      - db 
     networks:
       - nube_network
 

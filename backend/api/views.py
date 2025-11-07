@@ -1,16 +1,15 @@
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, status
 from .models import Juego, Contacto
 from .serializers import JuegoSerializer, ContactoSerializer, UserSerializer, MyTokenObtainPairSerializer
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 class JuegoViewSet(viewsets.ModelViewSet):
     queryset = Juego.objects.all()
     serializer_class = JuegoSerializer
-    permission_classes = [permissions.IsAuthenticated] 
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly] 
 
     def get_permissions(self):
         if self.action == 'retrieve':
