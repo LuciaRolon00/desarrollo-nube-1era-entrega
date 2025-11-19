@@ -1,4 +1,4 @@
-Desarrollo de un Proyecto en la Nube (1era Entrega)
+## Desarrollo de un Proyecto en la Nube (1era Entrega)
 
 Este proyecto es una API REST funcional desarrollada en Django, dockerizada para correr localmente junto con una base de datos PostgreSQL en un contenedor.
 
